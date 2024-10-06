@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <title>Log ind side</title>
+
+    <style>
+      body{
+          background-color: #FFF387;
+      }
+      .zealandlogo2{
+          width: 240px;
+          height: auto;
+          text-align: center;
+          margin-top: -60px;
+          margin-left: 66px;
+      }
+
+      .introguide2{
+          width: 250px;
+          height: auto;
+          font-size: 32px;
+          text-align: center;
+          margin-top: -90px;
+          margin-left: 66px;
+          font-family: "Space Grotesk", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+      }
+
+      .login-section1 {
+          position: relative;
+          text-align: left;
+          width: 75%;
+          margin: auto;
+          font-weight: 500;
+          margin-top: 80px;
+      }
+
+      .form-group1 {
+          margin-bottom: 25px;
+          position: relative;
+      }
+
+      .brugernavn1, .kode1 {
+          margin-bottom: 20px;
+          height: auto;
+          font-size: 19px;
+          text-align: center;
+          margin-top: -90px;
+          margin-left: 90px;
+          font-family: "Space Grotesk", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+
+      }
+
+      input {
+          width: 100%;
+          height: 45px;
+          border-radius: 30px;
+          background-color: #fffcfc;
+          border: none;
+          padding-left: 10px;
+          font-size: 18px;
+          color: rgba(3, 0, 0, 0.6);
+          margin-top: 10px;
+      }
+
+      /* Knap til login */
+      .log-ind1 {
+          display: block;
+          width: 70%;
+          height: 50px;
+          background-color: #ffffff;
+          color: rgba(3, 0, 0, 0.6);
+          border-radius: 50px;
+          box-shadow: 4px 4px 4px rgba(3, 0, 0, 0.4);
+          text-align: center;
+          line-height: 50px;
+          cursor: pointer;
+          margin: auto;
+          border: none;
+          font-size: 20px;
+          color: black;
+          font-family: "Space Grotesk", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+          margin-top: 40px;
+      }
+
+      .drengogpige1{
+          width: 370px;
+          height: auto;
+          text-align: center;
+          margin-left: -2px;
+      }
+
+    </style>
+</head>
+
+
+<body>
+
+<header>
+    <img alt="zealandlogo" class="zealandlogo2" src="Untitled%20design-2.png">
+    <h2 class="introguide2">
+        Intro guide
+    </h2>
+</header>
+
+
+<main class="center1">
+    <section class="login-section1">
+        <form class="login-form1" action="/starterside" method="post">
+            <div class="form-group1">
+                <label for="username" class="brugernavn1">Brugernavn:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group1">
+                <label for="password" class="kode1">Kodeord:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="button" class="log-ind1" onclick="window.location.href='Home.html';">Log ind</button>
+        </form>
+    </section>
+</main>
+
+<img alt="pigeogdreng" class="drengogpige1" src="drengogpige.png">
+
+</body>
+</html>
