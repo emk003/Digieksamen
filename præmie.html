@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>præmie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+
+        body{
+            background-color: #FFFEF2;
+        }
+
+        .præmie{
+            width: 400px;
+            height: 400px;
+        }
+
+        h1{
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 40px;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        p{
+            font-family: "Actor", sans-serif;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        .slidecontainer {
+            margin-left: 26px;
+            width: 300px; /* Width of the outside container */
+        }
+
+        /* The slider itself */
+        .slider {
+            -webkit-appearance: none;  /* Override default CSS styles */
+            appearance: none;
+            width: 100%; /* Full-width */
+            height: 50px; /* Specified height */
+            background: #FFF9C7; /* Grey background */
+            border-radius: 30px;
+            outline: none; /* Remove outline */
+            opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+            -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+            transition: opacity .2s;
+        }
+
+        /* Mouse-over effects */
+        .slider:hover {
+            opacity: 1; /* Fully shown on mouse-over */
+        }
+
+        /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none; /* Override default look */
+            appearance: none;
+            width: 50px; /* Set a specific slider handle width */
+            height: 50px; /* Slider handle height */
+            border-radius: 30px;
+            background: #FFF280; /* Green background */
+            cursor: pointer; /* Cursor on hover */
+        }
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+<img class="præmie" src="Fotos/price.png" alt="præmiebilled">
+
+<h1>Drinksbillet</h1>
+
+<p>Du har gjordt dig fortjent til 1 drinks billet i fredagsbaren. <br>
+    Kan kun indløses til den første fredagsbar. <br> <br>
+    Du kan vælge mellem øl, cider, sodavand</p>
+
+<div class="slidecontainer">
+    <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
+</div>
+
+</body>
+</html>
