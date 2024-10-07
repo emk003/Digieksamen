@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Hjemside</title>
@@ -148,6 +148,67 @@
             border-color: #e0c046;
         }
 
+
+        /* Styling til pop-up boksen */
+        .popup {
+            display: none; /* Start som skjult */
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 20px;
+            font-size: 16px;
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            font-family: "Space Grotesk", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+        }
+        /* Baggrund, der vises bag pop-up'en */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        .close-btn {
+            display: block;
+            position: absolute;
+            margin-top: -185px;
+            padding: 10px 12px;
+            background-color: #FFF387;
+            border-radius: 25px;
+            box-shadow: 4px 4px 4px rgba(1, 0, 0, 0.1);
+            color: black;
+            border:none;
+            cursor: pointer;
+        }
+        .transportspil{
+            display: block;
+            margin: 10px auto 0;
+            padding: 15px 50px;
+            font-size: 15px;
+            background-color: #FFF387;
+            border-radius: 25px;
+            box-shadow: 4px 4px 4px rgba(1, 0, 0, 0.1);
+            color: black;
+            border:none;
+            cursor: pointer;
+            font-family: "Space Grotesk", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
     </style>
 
 </head>
@@ -169,8 +230,39 @@ Intro guide
 
 <button type="button" class="knap5" onclick="window.location.href='......';">Personer</button>
 
-<button type="button" class="knap6" onclick="window.location.href='......';">Transport</button>
 
+
+<button onclick="openPopup()" type="button" class="knap6">Transport</button>
+
+
+
+
+<div class="popup-overlay" id="popupOverlay"></div>
+<div class="popup" id="popupBox">
+<h2>Transport</h2>
+<p>Læs informationerne om transport i bogen. Tryk på det svar du tror er rigtigt, hvis ikke det rigtigt, bliv ved med
+at svarer. Når du har svaret rigtigt gå derefter videre i quizzen</p>
+<button class="close-btn" onclick="closePopup()">///</button>
+    <button class="transportspil" onclick="window.location.href='quiz.html';">Start Quiz</button>
+</div>
+
+
+
+<script>
+function openPopup() {
+    document.getElementById('popupBox').style.display = 'block';
+    document.getElementById('popupOverlay').style.display = 'block';
+}
+
+function closePopup() {
+    document.getElementById('popupBox').style.display = 'none';
+    document.getElementById('popupOverlay').style.display = 'none';
+
+}
+
+
+
+</script>
 
 
 </body>
