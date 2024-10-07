@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a4b7cedec2.js" crossorigin="anonymous"></script>
 
     <style>
         body{
@@ -209,6 +210,59 @@
             font-style: normal;
         }
 
+
+        /*Footer navbar*/
+        body, html {
+            height: 100%;
+            font-family: "Space Grotesk", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff393;
+            padding: 10px 0;
+            margin-left: -8px;
+            box-shadow: 0 -5px 3px rgba(1, 0, 0, 0.1);
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            text-align: center;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: rgba(3, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar ul li a i {
+            font-size: 40px;
+            margin-bottom: 1px;
+        }
+
+        .navbar ul li a span {
+            font-size: 2px;
+        }
+
+        .navbar ul li a:hover {
+            color: rgb(224, 192, 70);
+        }
+
     </style>
 
 </head>
@@ -220,23 +274,21 @@
 Intro guide
     </h2>
 </header>
-<button type="button" class="knap1" onclick="window.location.href='......';">Fredagsbar</button>
+<button type="button" class="knap1" onclick="openPopup6()">Fredagsbar</button>
 
-<button type="button" class="knap2" onclick="window.location.href='......';">Moodle</button>
+<button type="button" class="knap2" onclick="openPopup5()">Moodle</button>
 
-<button type="button" class="knap3" onclick="window.location.href='......';">Skema</button>
+<button type="button" class="knap3" onclick="openPopup4()">Skema</button>
 
-<button type="button" class="knap4" onclick="window.location.href='......';">Good too Know</button>
+<button type="button" class="knap4" onclick="openPopup3()">Good too Know</button>
 
-<button type="button" class="knap5" onclick="window.location.href='......';">Personer</button>
-
-
+<button type="button" class="knap5" onclick="openPopup2()" >Personer</button>
 
 <button onclick="openPopup()" type="button" class="knap6">Transport</button>
 
 
 
-
+<!-- Transport popup bok med titel og brødtekst-->
 <div class="popup-overlay" id="popupOverlay"></div>
 <div class="popup" id="popupBox">
 <h2>Transport</h2>
@@ -246,9 +298,59 @@ at svarer. Når du har svaret rigtigt gå derefter videre i quizzen</p>
     <button class="transportspil" onclick="window.location.href='quiz.html';">Start Quiz</button>
 </div>
 
+<!-- Personer popup bok med titel og brødtekst-->
+<div class="popup-overlay" id="popupOverlay2"></div>
+<div class="popup" id="popupBox2">
+    <h2>Personer</h2>
+    <p>Læs informationerne om personer i bogen. Tryk på det svar du tror er rigtigt, hvis ikke det rigtigt
+    ,bliv ved med at svarer. Når du har svaret rigtigt gå derefter videre i quizzen.</p>
+    <button class="close-btn" onclick="closePopup2()">///</button>
+    <button class="transportspil" onclick="window.location.href='quiz.html';">Start Quiz</button>
+</div>
+
+<!-- Good too know popup bok med titel og brødtekst-->
+<div class="popup-overlay" id="popupOverlay3"></div>
+<div class="popup" id="popupBox3">
+    <h2>Good too know</h2>
+    <p>Læs informationerne om Good too know i bogen. Tryk på det svar du tror er rigtigt, hvis ikke det rigtigt
+        ,bliv ved med at svarer. Når du har svaret rigtigt gå derefter videre i quizzen.</p>
+    <button class="close-btn" onclick="closePopup3()">///</button>
+    <button class="transportspil" onclick="window.location.href='quiz.html';">Start Quiz</button>
+</div>
+
+<!-- Skema popup bok med titel og brødtekst-->
+<div class="popup-overlay" id="popupOverlay4"></div>
+<div class="popup" id="popupBox4">
+    <h2>Skema</h2>
+    <p>Læs informationerne om Skema i bogen. Tryk på det svar du tror er rigtigt, hvis ikke det rigtigt
+        ,bliv ved med at svarer. Når du har svaret rigtigt gå derefter videre i quizzen.</p>
+    <button class="close-btn" onclick="closePopup4()">///</button>
+    <button class="transportspil" onclick="window.location.href='quiz.html';">Start Quiz</button>
+</div>
+
+<!-- moodle popup bok med titel og brødtekst-->
+<div class="popup-overlay" id="popupOverlay5"></div>
+<div class="popup" id="popupBox5">
+    <h2>Moodle</h2>
+    <p>Læs informationerne om Moodle i bogen. Tryk på det svar du tror er rigtigt, hvis ikke det rigtigt
+        ,bliv ved med at svarer. Når du har svaret rigtigt gå derefter videre i quizzen.</p>
+    <button class="close-btn" onclick="closePopup5()">///</button>
+    <button class="transportspil" onclick="window.location.href='quiz.html';">Start Quiz</button>
+</div>
+
+<!-- Fredagsbar popup bok med titel og brødtekst-->
+<div class="popup-overlay" id="popupOverlay6"></div>
+<div class="popup" id="popupBox6">
+    <h2>Fredagsbar</h2>
+    <p>Læs informationerne om Fredagsbaren i bogen. Tryk på det svar du tror er rigtigt, hvis ikke det rigtigt
+        ,bliv ved med at svarer. Når du har svaret rigtigt gå derefter videre i quizzen.</p>
+    <button class="close-btn" onclick="closePopup6()">///</button>
+    <button class="transportspil" onclick="window.location.href='quiz.html';">Start Quiz</button>
+</div>
 
 
 <script>
+
 function openPopup() {
     document.getElementById('popupBox').style.display = 'block';
     document.getElementById('popupOverlay').style.display = 'block';
@@ -260,9 +362,79 @@ function closePopup() {
 
 }
 
+    <!-- javascript til at åbne og lukke popup, Personer knap -->
+function openPopup2() {
+    document.getElementById('popupBox2').style.display = 'block';
+    document.getElementById('popupOverlay2').style.display = 'block';
+}
 
+function closePopup2() {
+    document.getElementById('popupBox2').style.display = 'none';
+    document.getElementById('popupOverlay2').style.display = 'none';
+
+}
+
+<!-- javascript til at åbne og lukke popup, Good too know knap -->
+function openPopup3() {
+        document.getElementById('popupBox3').style.display = 'block';
+        document.getElementById('popupOverlay3').style.display = 'block';
+    }
+
+    function closePopup3() {
+        document.getElementById('popupBox3').style.display = 'none';
+        document.getElementById('popupOverlay3').style.display = 'none';
+
+    }
+<!-- javascript til at åbne og lukke popup, Skema knap -->
+function openPopup4() {
+    document.getElementById('popupBox4').style.display = 'block';
+    document.getElementById('popupOverlay4').style.display = 'block';
+}
+
+function closePopup4() {
+    document.getElementById('popupBox4').style.display = 'none';
+    document.getElementById('popupOverlay4').style.display = 'none';
+
+}
+
+
+<!-- javascript til at åbne og lukke popup, moodle knap -->
+function openPopup5() {
+    document.getElementById('popupBox5').style.display = 'block';
+    document.getElementById('popupOverlay5').style.display = 'block';
+}
+
+function closePopup5() {
+    document.getElementById('popupBox5').style.display = 'none';
+    document.getElementById('popupOverlay5').style.display = 'none';
+
+}
+
+<!-- javascript til at åbne og lukke popup, Fredagsbar knap -->
+function openPopup6() {
+    document.getElementById('popupBox6').style.display = 'block';
+    document.getElementById('popupOverlay6').style.display = 'block';
+}
+
+function closePopup6() {
+    document.getElementById('popupBox6').style.display = 'none';
+    document.getElementById('popupOverlay6').style.display = 'none';
+
+}
 
 </script>
+
+
+<!-- footer og navbar med ikoner-->
+<footer class="footer">
+    <nav class="navbar">
+        <ul>
+            <li><a href="profil.html"><i class="fas fa-user"></i><span></span></a></li>
+            <li><a href="Home.html"><i class="fa-solid fa-house"></i><span></span></a></li>
+            <li><a href="bogen.html"><i class="fa-solid fa-book"></i><span></span></a></li>
+        </ul>
+    </nav>
+</footer>
 
 
 </body>
