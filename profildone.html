@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profildone</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Actor&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v3.min.js" defer></script>
+  <script src="profildone.js" defer></script>
+
+    <style>
+      /*så der ikke er noget luft til kanterne*/
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    h1{
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: bold;
+      font-size: 57px;
+      margin-top: 16%; /*så den kom længere ned fra siden og passede iforholf til placeringen med profilbilledet*/
+    }
+
+    h2{
+      font-family: "Actor", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 45px;
+    }
+
+    .profilbilled {
+      height: 271px;
+      width: 271px;
+    }
+
+    #øverst{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 10%;
+    }
+
+    h3{
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: normal;
+      font-size: 77px;
+      margin-top: 22%;
+      text-align: center;
+    }
+
+    .chart-area {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: normal;
+      width: 637px;
+      font-size: 10px;
+      margin-left: 17%;
+      margin-top: 10%;
+    }
+    .shadow {
+      filter: drop-shadow( 0px 10px 8px rgba(0, 0, 0, .6));
+    }
+
+    .præmie{
+      background-color: #FFF387;
+      color: black;
+      margin-top: 10%;
+      padding: 15px 32px;
+      text-align: center;
+      border-radius: 48px;
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: normal;
+      font-size: 50px;
+      margin-left: 317px;
+      box-shadow:  0 5px 8px #494949;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- Har lavet en section for at gruppere mit indhold. Indholdet her er profilbilledet, samt navnet og uddannelse på den øverste sektion på siden-->
+<section id="øverst"> <!-- Har givet boksen et ID, da det er et specifikt element-->
+  <img class="profilbilled" src="Fotos/profilbilled.png" alt="profilbilled"> <!--har givet billedet en class, så jeg kan style på det-->
+
+  <!--Har lavet en articel til overskrifterne, da de skulle stå under hinanden-->
+  <article>
+    <h1>Casper Markussen</h1>
+    <h2>Finansøkonom</h2>
+  </article>
+</section>
+
+<h3>Tillykke, du er nu studieklar!</h3>
+
+<div class="chart-area"></div>
+
+<button class="præmie">Få præmie</button>
+
+
+
+</body>
+</html>

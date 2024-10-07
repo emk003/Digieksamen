@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transport quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Actor&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <script src="https://d3js.org/d3.v3.min.js" defer></script>
+  <script src="quiz.js" defer></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #FFFEF2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .quiz-container {
+      text-align: center;
+      padding: 20px;
+      width: 80%;
+    }
+
+    .progress-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      position: relative;
+
+    }
+
+    .progress-bar .progress {
+      width: 66%;
+      height: 50px;
+      background-color: #FFF387;
+      border-radius: 30px;
+      position: relative;
+    }
+
+    .progress-bar .progress::before {
+      content: '';
+      width: 66%;
+      height: 100%;
+      background-color: #FFCC00;
+      border-radius: 30px;
+      position: absolute;
+      top: 0;
+      left: 0; /* Starter fra venstre */
+    }
+
+    .progress-bar .progress-text {
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 38px;
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: normal;
+    }
+
+    h2 {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: normal;
+      font-size: 42px;
+      margin-bottom: 25px;
+      padding: 0 10px;
+    }
+
+    .option-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      padding: 48px;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    .option:hover {
+      background-color: #FFF7D1;
+    }
+
+    .option p{
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: normal;
+      font-size: 31px;
+    }
+
+    .circle {
+      width: 50px;
+      height: 50px;
+      background-color: #FFF387;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .next-btn {
+      margin-top: 79px;
+      padding: 12px 25px;
+      background-color: #FFF387;
+      border: none;
+      border-radius: 20px;
+      font-size: 36px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: normal;
+    }
+
+    .next-btn:hover {
+      background-color: #FFE65B;
+    }
+
+  </style>
+
+</head>
+
+<body>
+<div class="quiz-container">
+  <div class="progress-bar">
+    <div class="progress"></div>
+    <span class="progress-text">2/3</span>
+  </div>
+
+  <h2>Hvor kan man parkere i Køge?</h2>
+
+  <div class="option-container">
+    <div class="option" onclick="checkAnswer(this, false)">
+      <div class="circle"></div>
+      <p>Alle parkeringspladser i området</p>
+    </div>
+
+    <div class="option" onclick="checkAnswer(this, false)">
+      <div class="circle"></div>
+      <p>Foran skolen og ved udstikkeren</p>
+    </div>
+
+    <div class="option" onclick="checkAnswer(this, true)">
+      <div class="circle"></div>
+      <p>Foran skolen, ved udstikkeren og ved uddannelsesvej</p>
+    </div>
+
+    <div class="option" onclick="checkAnswer(this, false)">
+      <div class="circle"></div>
+      <p>Man kan kun holde på parkeringspladsen foran skolen</p>
+    </div>
+  </div>
+
+  <button class="next-btn">Næste</button>
+</div>
+
+
+</body>
+</html>

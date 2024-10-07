@@ -13,4 +13,6 @@ function checkAnswer(option, isCorrect) {
     } else {
         circle.style.backgroundColor = '#EB5757'; // Rød for forkert svar
     }
+
 }
+
