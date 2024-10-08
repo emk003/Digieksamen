@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a4b7cedec2.js" crossorigin="anonymous"></script>
 
   <style>
     * {
@@ -90,6 +91,58 @@
 
       }
 
+    /*Footer navbar*/
+    body, html {
+      height: 100%;
+      font-family: "Space Grotesk", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #fff393;
+      padding: 10px 0;
+      margin-left: -20px;
+      box-shadow: 0 -5px 3px rgba(1, 0, 0, 0.1);
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      text-align: center;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: rgba(3, 0, 0, 0.6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar ul li a i {
+      font-size: 40px;
+      margin-bottom: 1px;
+    }
+
+    .navbar ul li a span {
+      font-size: 2px;
+    }
+
+    .navbar ul li a:hover {
+      color: rgb(224, 192, 70);
+    }
+
   </style>
 </head>
 <body>
@@ -114,6 +167,17 @@
     <p>Det er også værd at huske på at der ligger 3 skoler, hvor mange elever skal med den samme bus og derfor kan bussen hurtigt blive fyldt op, så hvis du gerne vil have en roligere tur, vil det anbefales at tage bussen på lidt skæve tidspunkter, hvis det er muligt.</p>
   </div>
 </section>
+
+<!-- footer og navbar med ikoner-->
+<footer class="footer">
+  <nav class="navbar">
+    <ul>
+      <li><a href="profil.html"><i class="fas fa-user"></i><span></span></a></li>
+      <li><a href="Home.html"><i class="fa-solid fa-house"></i><span></span></a></li>
+      <li><a href="bogen.html"><i class="fa-solid fa-book"></i><span></span></a></li>
+    </ul>
+  </nav>
+</footer>
 
 </body>
 </html>
