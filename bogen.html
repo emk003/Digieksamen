@@ -28,18 +28,19 @@
       margin-top: -20%;
     }
 
+    /*har stylet hvert emne nogenlunde på samme måde, hvor placering of farve adskiller sig lidt*/
     #fredagsbar{
       background-color: #FFF387;
       font-family: "Space Grotesk", sans-serif;
       font-size: 15px;
       font-weight: normal;
       padding: 15px 32px;
-      border-radius: 30px 30px 0 0;
+      border-radius: 30px 30px 0 0; /*har givet en værdi til de to øverste hjørner, så det kun er dem der har runde hjørner*/
       height: 78px;
       width: 326px;
       margin-left: -8px;
       margin-top: 104px;
-      box-shadow: 0 -5px 8px #494949;
+      box-shadow: 0 -5px 8px #494949; /*har vendt skyggen om ved at give den en minus værdi, så det ko på toppen af diven*/
 
     }
 
@@ -181,6 +182,7 @@
 
 <h2>Bogen</h2>
 
+<!-- har lavet en div til hvert emne, for at kunne style på dem med hver deres farve og placering-->
 <div id="fredagsbar">
   <p>Fredagsbar</p>
 </div>
@@ -197,6 +199,7 @@
   <p>Good to know</p>
 </div>
 
+<!--her er der også sat link ind, så man kan trykke rundt på siden-->
 <div onclick="window.location.href='personerbog.html';"id="personer">
   <p>Personer</p>
 </div>

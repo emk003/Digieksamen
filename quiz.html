@@ -28,12 +28,14 @@
             margin: 0;
         }
 
+        /* Containeren for quiz-indholdet, centreret og med padding */
         .quiz-container {
             text-align: center;
             padding: 20px;
             width: 80%;
         }
 
+        /* Styling af progress bar-container, som viser quizens fremskridt */
         .progress-bar {
             display: flex;
             justify-content: center;
@@ -43,6 +45,7 @@
 
         }
 
+        /* Indre del af progress baren */
         .progress-bar .progress {
             width: 66%;
             height: 50px;
@@ -51,6 +54,7 @@
             position: relative;
         }
 
+        /* Gul fyld i progress baren, der angiver quiz-fremskridt */
         .progress-bar .progress::before {
             content: '';
             width: 33%;
@@ -62,15 +66,17 @@
             left: 0; /* Starter fra venstre */
         }
 
+        /* Styling af progress-bar teksten, som angiver hvor langt brugeren er */
         .progress-bar .progress-text {
             position: absolute;
             top: -60px;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translateX(-50%); /* Centrerer teksten horisontalt */
             font-size: 38px;
             font-family: "Space Grotesk", sans-serif;
             font-weight: normal;
         }
+
 
         h2 {
             font-family: "Space Grotesk", sans-serif;
@@ -80,12 +86,14 @@
             padding: 0 10px;
         }
 
+        /* Container for quiz-mulighederne, som er en liste af valg */
         .option-container {
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
 
+        /* Styling af hver enkelt mulighed */
         .option {
             display: flex;
             align-items: center;
@@ -96,16 +104,19 @@
             cursor: pointer;
         }
 
+        /* Ændring af baggrundsfarve, når man holder musen over en mulighed */
         .option:hover {
             background-color: #FFF7D1;
         }
 
+        /* Styling af teksten i mulighederne */
         .option p{
             font-family: "Space Grotesk", sans-serif;
             font-weight: normal;
             font-size: 31px;
         }
 
+        /* Styling af den cirkel, der viser om valget er korrekt eller forkert */
         .circle {
             width: 50px;
             height: 50px;
@@ -114,6 +125,7 @@
             margin-right: 15px;
         }
 
+        /* Styling af næste-knappen */
         .next-btn {
             margin-top: 79px;
             padding: 12px 25px;
@@ -127,6 +139,7 @@
             font-weight: normal;
         }
 
+        /* Ændrer baggrundsfarven, når man holder musen over næste-knappen */
         .next-btn:hover {
             background-color: #FFE65B;
         }
@@ -136,7 +149,10 @@
 </head>
 
 <body>
+
+<!-- Quiz-containeren indeholder hele quiz-interfacet -->
 <div class="quiz-container">
+    <!-- Progress bar, der viser hvor langt man er i quizzen -->
     <div class="progress-bar">
         <div class="progress"></div>
         <span class="progress-text">1/3</span>
@@ -144,12 +160,15 @@
 
     <h2>Hvor holder bussen ved skolen i Køge?</h2>
 
+    <!-- Container for quiz-mulighederne -->
     <div class="option-container">
+        <!-- Første mulighed, som er korrekt -->
         <div class="option" onclick="checkAnswer(this, true)">
             <div class="circle"></div>
             <p>Ude foran skolen ved kantinen</p>
         </div>
 
+        <!-- Resten af mulighederne, som er forkerte -->
         <div class="option" onclick="checkAnswer(this, false)">
             <div class="circle"></div>
             <p>Ved parkeringspladsen ude foran skolen ved frontdesk</p>
@@ -166,6 +185,7 @@
         </div>
     </div>
 
+    <!-- Næste-knappen, som fører til næste quiz-spørgsmål -->
     <button class="next-btn" onclick="window.location.href='quiz2.html';">Næste</button>
 </div>
 

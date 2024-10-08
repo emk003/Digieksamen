@@ -40,6 +40,7 @@
           width: 100px;
       }
 
+      /* har stylet det så tekst og profilbilled står ved siden af hinanden*/
       #øverst{
           display: flex;
           flex-direction: row;
@@ -57,6 +58,7 @@
           text-align: center;
       }
 
+      /* for at få donut diagrammet til at være i midten*/
       .chart-area {
           font-family: "Space Grotesk", sans-serif;
           font-weight: normal;
@@ -65,9 +67,7 @@
           margin-left: 16%;
           margin-top: 10%;
       }
-      .shadow {
-          filter: drop-shadow( 0px 10px 8px rgba(0, 0, 0, .6));
-      }
+
 
       .testfunktionen{
           background-color: #FFF387;
@@ -153,8 +153,10 @@
 
 <h3>Du er så tæt på at blive studieklar</h3>
 
+<!-- lavet denne div til at få donutten ind i html-->
 <div class="chart-area"></div>
 
+<!--knap til at teste donutten kører rundt-->
 <button class="testfunktionen" id="randomize">Test donutten</button>
 
 <!-- footer og navbar med ikoner-->

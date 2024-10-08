@@ -37,37 +37,37 @@
 
         .slidecontainer {
             margin-left: 26px;
-            width: 300px; /* Width of the outside container */
+            width: 300px; /* bredde på container yderside */
         }
 
-        /* The slider itself */
+        /* slideren */
         .slider {
             -webkit-appearance: none;  /* Override default CSS styles */
             appearance: none;
-            width: 100%; /* Full-width */
-            height: 50px; /* Specified height */
-            background: #FFF9C7; /* Grey background */
+            width: 100%;
+            height: 50px;
+            background: #FFF9C7;
             border-radius: 30px;
-            outline: none; /* Remove outline */
-            opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-            -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s; /* 0.2 sekunder transisition */
             transition: opacity .2s;
         }
 
         /* Mouse-over effects */
         .slider:hover {
-            opacity: 1; /* Fully shown on mouse-over */
+            opacity: 1; /* helt fyldt på hover */
         }
 
         /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
         .slider::-webkit-slider-thumb {
             -webkit-appearance: none; /* Override default look */
             appearance: none;
-            width: 50px; /* Set a specific slider handle width */
-            height: 50px; /* Slider handle height */
+            width: 50px;
+            height: 50px;
             border-radius: 30px;
-            background: #FFF280; /* Green background */
-            cursor: pointer; /* Cursor on hover */
+            background: #FFF280;
+            cursor: pointer;
         }
 
         /*Footer navbar*/
@@ -137,6 +137,7 @@
     Kan kun indløses til den første fredagsbar. <br> <br>
     Du kan vælge mellem øl, cider, sodavand</p>
 
+<!--hjælp fra chat gpt-->
 <div class="slidecontainer">
     <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
 </div>
