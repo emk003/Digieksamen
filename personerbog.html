@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Actor&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a4b7cedec2.js" crossorigin="anonymous"></script>
+
+
 
     <style>
 
@@ -64,6 +67,60 @@
             margin-left: 183px;
         }
 
+
+        /*Footer navbar*/
+        body, html {
+            height: 100%;
+            font-family: "Space Grotesk", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff393;
+            padding: 10px 0;
+            margin-left: -8px;
+            box-shadow: 0 -5px 3px rgba(1, 0, 0, 0.1);
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            text-align: center;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: rgba(3, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar ul li a i {
+            font-size: 90px;
+            margin-bottom: 1px;
+        }
+
+        .navbar ul li a span {
+            font-size: 2px;
+        }
+
+        .navbar ul li a:hover {
+            color: rgb(224, 192, 70);
+        }
+
     </style>
 
 </head>
@@ -92,6 +149,18 @@
     <p>Studievejledningen kan du få brug for under dit studie, det kan både være i form af ekstra hjælpemidler, hvis du ikke har det så godt med studiet eller i privatten. De vil hjælpe med alt. Du kan finde kontaktinformationer og meget andet inde på moodle, hvis du søger på “studievejledning”</p>
 
     <img class="foto" src="Fotos/studievejledning.png" alt="studievejledning">
+
+
+<!-- footer og navbar med ikoner-->
+<footer class="footer">
+    <nav class="navbar">
+        <ul>
+            <li><a href="profil.html"><i class="fas fa-user"></i><span></span></a></li>
+            <li><a href="Home.html"><i class="fa-solid fa-house"></i><span></span></a></li>
+            <li><a href="bogen.html"><i class="fa-solid fa-book"></i><span></span></a></li>
+        </ul>
+    </nav>
+</footer>
 
 
 </body>

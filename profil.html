@@ -12,6 +12,7 @@
 
     <script src="https://d3js.org/d3.v5.min.js" defer></script>
     <script src="studieklar.js" defer></script>
+    <script src="https://kit.fontawesome.com/a4b7cedec2.js" crossorigin="anonymous"></script>
 
   <style>
       /*så der ikke er noget luft til kanterne*/
@@ -80,6 +81,59 @@
           margin-left: 204px;
       }
 
+      /*Footer navbar*/
+      body, html {
+          height: 100%;
+          font-family: "Space Grotesk", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+      }
+
+
+      .footer {
+          position: fixed;
+          bottom: 0;
+          width: 102%;
+          background-color: #fff393;
+          padding: 10px 0;
+          margin-left: -8px;
+          box-shadow: 0 -5px 3px rgba(1, 0, 0, 0.1);
+      }
+
+      .navbar ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 0;
+      }
+
+      .navbar ul li {
+          text-align: center;
+      }
+
+      .navbar ul li a {
+          text-decoration: none;
+          color: rgba(3, 0, 0, 0.6);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .navbar ul li a i {
+          font-size: 40px;
+          margin-bottom: 1px;
+      }
+
+      .navbar ul li a span {
+          font-size: 2px;
+      }
+
+      .navbar ul li a:hover {
+          color: rgb(224, 192, 70);
+      }
+
   </style>
 
 </head>
@@ -102,6 +156,17 @@
 <div class="chart-area"></div>
 
 <button class="testfunktionen" id="randomize">Test donutten</button>
+
+<!-- footer og navbar med ikoner-->
+<footer class="footer">
+    <nav class="navbar">
+        <ul>
+            <li><a href="profil.html"><i class="fas fa-user"></i><span></span></a></li>
+            <li><a href="Home.html"><i class="fa-solid fa-house"></i><span></span></a></li>
+            <li><a href="bogen.html"><i class="fa-solid fa-book"></i><span></span></a></li>
+        </ul>
+    </nav>
+</footer>
 
 
 
