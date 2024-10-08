@@ -35,6 +35,7 @@
             font-weight: 400;
             font-style: normal;
         }
+        /*Fredagsbar knap */
         .knap1{
             background-color: #ffffff; /* Green */
 
@@ -54,7 +55,7 @@
             border-color: #e0c046;
 
         }
-
+        /*Moodle knap */
         .knap2{
             background-color: #ffffff; /* Green */
 
@@ -73,7 +74,7 @@
             border-width: medium;
             border-color: #e0c046;
         }
-
+        /*Skema knap */
         .knap3{
             background-color: #ffffff; /* Green */
 
@@ -92,6 +93,7 @@
             border-width: medium;
             border-color: #e0c046;
         }
+        /*Good too know knap */
         .knap4{
             background-color: #ffffff; /* Green */
 
@@ -110,7 +112,7 @@
             border-width: medium;
             border-color: #e0c046;
         }
-
+        /*Personer knap */
         .knap5{
             background-color: #ffffff; /* Green */
 
@@ -129,7 +131,7 @@
             border-width: medium;
             border-color: #e0c046;
         }
-
+        /*Transport knap */
         .knap6{
             background-color: #ffffff; /* Green */
 
@@ -181,6 +183,7 @@
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
+        /*Lukke popup knap */
         .close-btn {
             display: block;
             position: absolute;
@@ -193,6 +196,7 @@
             border:none;
             cursor: pointer;
         }
+        /*Start spil knap */
         .transportspil{
             display: block;
             margin: 10px auto 0;
@@ -219,7 +223,7 @@
             font-weight: 400;
             font-style: normal;
         }
-
+        /*footer og navbar placering */
         .footer {
             position: fixed;
             bottom: 0;
@@ -229,7 +233,7 @@
             margin-left: -8px;
             box-shadow: 0 -5px 3px rgba(1, 0, 0, 0.1);
         }
-
+        /*Navbar css*/
         .navbar ul {
             list-style: none;
             display: flex;
@@ -242,6 +246,7 @@
             text-align: center;
         }
 
+        /*ikon farve og placering */
         .navbar ul li a {
             text-decoration: none;
             color: rgba(3, 0, 0, 0.6);
@@ -250,6 +255,7 @@
             align-items: center;
         }
 
+        /*Ikon størrelsen og afstand til bunden*/
         .navbar ul li a i {
             font-size: 40px;
             margin-bottom: 1px;
@@ -258,22 +264,23 @@
         .navbar ul li a span {
             font-size: 2px;
         }
-
+        /*farven der visses efter man har trykket på knappen*/
         .navbar ul li a:hover {
             color: rgb(224, 192, 70);
         }
 
     </style>
-
 </head>
 
 <body>
+
 <header>
     <img alt="logoigen" class="logo4" src="Untitled%20design-2.png">
     <h2 class="introguide3">
 Intro guide
     </h2>
 </header>
+<!-- De forskellige spil baner lavet som knapper som er linket til Popupen som åbnes når der bliver trykket-->
 <button type="button" class="knap1" onclick="openPopup6()">Fredagsbar</button>
 
 <button type="button" class="knap2" onclick="openPopup5()">Moodle</button>
@@ -315,7 +322,7 @@ at svarer. Når du har svaret rigtigt gå derefter videre i quizzen</p>
     <p>Læs informationerne om Good too know i bogen. Tryk på det svar du tror er rigtigt, hvis ikke det rigtigt
         ,bliv ved med at svarer. Når du har svaret rigtigt gå derefter videre i quizzen.</p>
     <button class="close-btn" onclick="closePopup3()">///</button>
-    <button class="transportspil" onclick="window.location.href='quiz.html';">Start Quiz</button>
+    <button class="transportspil" onclick="window.location.href='....';">Start Quiz</button>
 </div>
 
 <!-- Skema popup bok med titel og brødtekst-->
@@ -325,7 +332,7 @@ at svarer. Når du har svaret rigtigt gå derefter videre i quizzen</p>
     <p>Læs informationerne om Skema i bogen. Tryk på det svar du tror er rigtigt, hvis ikke det rigtigt
         ,bliv ved med at svarer. Når du har svaret rigtigt gå derefter videre i quizzen.</p>
     <button class="close-btn" onclick="closePopup4()">///</button>
-    <button class="transportspil" onclick="window.location.href='quiz.html';">Start Quiz</button>
+    <button class="transportspil" onclick="window.location.href='....';">Start Quiz</button>
 </div>
 
 <!-- moodle popup bok med titel og brødtekst-->
@@ -335,7 +342,7 @@ at svarer. Når du har svaret rigtigt gå derefter videre i quizzen</p>
     <p>Læs informationerne om Moodle i bogen. Tryk på det svar du tror er rigtigt, hvis ikke det rigtigt
         ,bliv ved med at svarer. Når du har svaret rigtigt gå derefter videre i quizzen.</p>
     <button class="close-btn" onclick="closePopup5()">///</button>
-    <button class="transportspil" onclick="window.location.href='quiz.html';">Start Quiz</button>
+    <button class="transportspil" onclick="window.location.href='....';">Start Quiz</button>
 </div>
 
 <!-- Fredagsbar popup bok med titel og brødtekst-->
@@ -345,7 +352,7 @@ at svarer. Når du har svaret rigtigt gå derefter videre i quizzen</p>
     <p>Læs informationerne om Fredagsbaren i bogen. Tryk på det svar du tror er rigtigt, hvis ikke det rigtigt
         ,bliv ved med at svarer. Når du har svaret rigtigt gå derefter videre i quizzen.</p>
     <button class="close-btn" onclick="closePopup6()">///</button>
-    <button class="transportspil" onclick="window.location.href='quiz.html';">Start Quiz</button>
+    <button class="transportspil" onclick="window.location.href='....';">Start Quiz</button>
 </div>
 
 <!-- footer og navbar med ikoner-->
@@ -373,7 +380,7 @@ function closePopup() {
 
 }
 
-    <!-- javascript til at åbne og lukke popup, Personer knap -->
+    <!-- javascript med funtion til at åbne og lukke popup, Personer knap. Med hjælp fra Chatgpt. -->
 function openPopup2() {
     document.getElementById('popupBox2').style.display = 'block';
     document.getElementById('popupOverlay2').style.display = 'block';
@@ -385,7 +392,7 @@ function closePopup2() {
 
 }
 
-<!-- javascript til at åbne og lukke popup, Good too know knap -->
+<!-- javascript med funktion til at åbne og lukke popup, Good too know knap -->
 function openPopup3() {
         document.getElementById('popupBox3').style.display = 'block';
         document.getElementById('popupOverlay3').style.display = 'block';
@@ -396,7 +403,7 @@ function openPopup3() {
         document.getElementById('popupOverlay3').style.display = 'none';
 
     }
-<!-- javascript til at åbne og lukke popup, Skema knap -->
+<!-- javascript med funktion til at åbne og lukke popup, Skema knap -->
 function openPopup4() {
     document.getElementById('popupBox4').style.display = 'block';
     document.getElementById('popupOverlay4').style.display = 'block';
@@ -409,7 +416,7 @@ function closePopup4() {
 }
 
 
-<!-- javascript til at åbne og lukke popup, moodle knap -->
+<!-- javascript med funktion til at åbne og lukke popup, moodle knap -->
 function openPopup5() {
     document.getElementById('popupBox5').style.display = 'block';
     document.getElementById('popupOverlay5').style.display = 'block';
@@ -421,7 +428,7 @@ function closePopup5() {
 
 }
 
-<!-- javascript til at åbne og lukke popup, Fredagsbar knap -->
+<!-- javascript med funktion til at åbne og lukke popup, Fredagsbar knap -->
 function openPopup6() {
     document.getElementById('popupBox6').style.display = 'block';
     document.getElementById('popupOverlay6').style.display = 'block';
@@ -436,7 +443,7 @@ function closePopup6() {
 </script>
 
 
-<!-- footer og navbar med ikoner-->
+<!-- footer og navbar med ikoner fra fontawesome -->
 <footer class="footer">
     <nav class="navbar">
         <ul>
